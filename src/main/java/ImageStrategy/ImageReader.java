@@ -21,15 +21,12 @@ public class ImageReader implements IImageStrategy {
             width = image.getWidth();
             height = image.getHeight();
 
-            System.out.println("width: " + width);
-
             int count = 0;
             for (int i=0; i<height; i++) {
                 for (int j=0; j<width; j++) {
                     count++;
                     Color c = new Color(image.getRGB(j, i));
                     System.out.println("pixel no: " + j + " RGB: " + c);
-                    //System.out.println("width: " + width);
                 }
             }
 
